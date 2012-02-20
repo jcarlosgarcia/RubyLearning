@@ -1,2 +1,2 @@
-require "string_reverse"
+require './string_reverse'
 run Sinatra::Application
