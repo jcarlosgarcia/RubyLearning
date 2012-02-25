@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Stock Exchange Quote Service</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+<link rel="icon" type="image/ico" href="http://rubylearning.com/images/favicon.ico" />
+</head>
+
+<body>
+<div>
+<h1>Stock Exchange Quote Service</h1>
+<h3>Get Stock Quote</h3>
+<p>We shall be using Yahoo! Finance to pull the information of the given stock, for example: <b>ARUN</b></p>
+
+<form action="/show" method="get" accept-charset="utf-8">
+  <input type="text" name="symbol" value="Enter a stock symbol:" id="symbol">
+  
+  <input type="submit" value=".. fetch the quote!">
+</form>
+</div>
+<div id="footer">
+  <p><b>A Fun Sinatra App by Rubylearning</b>.</p>
+</div>
+</body>
+</html>
