@@ -1,0 +1,17 @@
+<h1>New Participant Form</h1>
+<p>Please enter the name and email id of the new participant. Have fun!</p>
+<form action="/" method="post" accept-charset="utf-8">
+	<input type="text" name="name" value="Name of participant..." id="name">
+	<input type="text" name="email" value="Email id..." id="email">
+	<input type="submit" value="... add the record!">
+</form>
+<table>
+	<tr><td>ID</td><td>NAME</td><td>EMAIL</td></tr>
+<%
+@list_students.each {|s| %>
+<tr><td><%= s.id.to_s %></td>
+    <td><%= s.name %></td>
+    <td><%= s.email %></td>
+</tr><% }
+%>
+</table>
